@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Toolbar
+            android:id="@+id/createGroupTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="@string/create_a_group"
+            android:titleTextColor="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="1dp"
+            />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/group_view"-->
+        <!--            android:src="@mipmap/add_photo"-->
+        <!--            android:layout_width="60dp"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:layout_below="@id/createGroupTextView"-->
+        <!--            android:contentDescription="@string/add_people_to_the_group"-->
+        <!--            android:padding="@dimen/all_side_padding"-->
+        <!--            />-->
+        <LinearLayout
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            >
+            <TextView
+                android:textSize="24dp"
+                android:id="@+id/groupNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_name"
+                android:textColor="@color/colorBlack"
+                android:padding="@dimen/all_side_padding"
+                android:selectAllOnFocus="true"
+                android:layout_weight="2"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/groupNameEditText"
+                android:hint="@string/enter_group_name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingTop="0dp"
+                android:layout_weight="5"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Group"
+                android:layout_marginLeft="70dp"
+                android:id="@+id/addGroupBtn"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            >
+            <ImageView
+                android:layout_weight="2"
+                android:id="@+id/invite_people_view"
+                android:src="@mipmap/link"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/add_people_to_the_group"
+                android:padding="@dimen/all_side_padding"
+                />
+
+            <TextView
+                android:textSize="24dp"
+                android:layout_weight="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inviteViaLinkTextView"
+                android:text="@string/invite_via_link"
+                android:textColor="@color/colorBlack"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

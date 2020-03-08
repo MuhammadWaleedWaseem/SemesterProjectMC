@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Splitwise</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_expense">Add Expense</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="create_a_group">Create a group</string>
+    <string name="group_name">Group Name</string>
+    <string name="enter_group_name">Enter Group Name</string>
+    <string name="add_people_to_the_group">Add People to the Group</string>
+    <string name="syed_shehroz_sohail">Syed Shehroz Sohail</string>
+    <string name="invite_via_link">Invite via Link</string>
+
+
+</resources>
